@@ -5,7 +5,7 @@
  */
 package bootstrap;
 
-import core.view.MainMenu;
+import view.comuns.MainMenu;
 
 /**
  *
