@@ -1,6 +1,6 @@
 package model.queens;
 
-import model.chesspieces.Pesa;
+import model.chesspieces.ChessFigure;
 import model.chesspieces.Reina;
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class BoardDefinition {
     public static final int INI_BOARD_SIZE = 8;
     
-    private ArrayList<Pesa> pieces;
+    private ArrayList<ChessFigure> pieces;
     private int boardSize = INI_BOARD_SIZE;
     
     public BoardDefinition() {
@@ -19,7 +19,7 @@ public class BoardDefinition {
     }
     
     
-    public void addPiece(Pesa p) {
+    public void addPiece(ChessFigure p) {
         getPieces().add(p);
     }
     
@@ -49,7 +49,7 @@ public class BoardDefinition {
     /**
      * @return the pieces
      */
-    public ArrayList<Pesa> getPieces() {
+    public ArrayList<ChessFigure> getPieces() {
         return pieces;
     }
     

@@ -1,7 +1,7 @@
 package model.game;
 
 import utils.PositionCode;
-import model.chesspieces.Pesa;
+import model.chesspieces.ChessFigure;
 import model.chesspieces.Rei;
 
 /**
@@ -9,13 +9,13 @@ import model.chesspieces.Rei;
  * @author Bernat Galmés Rubert
  */
 public class EstatTauler {
-    private Pesa[][] tauler;
+    private ChessFigure[][] tauler;
     
     public EstatTauler(int n) {
-        this.tauler = new Pesa[n][n];
+        this.tauler = new ChessFigure[n][n];
     }
     
-    public void colocarPesa(String codiPosicio, Pesa pesa)
+    public void colocarPesa(String codiPosicio, ChessFigure pesa)
     {
         PositionCode pos = new PositionCode(codiPosicio);
         tauler[pos.getRow()-1][pos.getColumn()-1] = pesa;                
@@ -25,8 +25,8 @@ public class EstatTauler {
         boolean j1jugant = false;
         boolean j2jugant = false;
         
-        for (Pesa[] fila : tauler){
-            for (Pesa p : fila) {
+        for (ChessFigure[] fila : tauler){
+            for (ChessFigure p : fila) {
                 if (p instanceof Rei) {
                     if (p.getJugador() == 1) {
                         j1jugant = true;
@@ -48,8 +48,8 @@ public class EstatTauler {
     }
     
     public boolean hasRei(int jugador ){
-        for (Pesa[] fila : tauler){
-            for (Pesa p : fila) {
+        for (ChessFigure[] fila : tauler){
+            for (ChessFigure p : fila) {
                 if (p instanceof Rei) {
                     if (p.getJugador() == jugador) {
                         return true;
@@ -62,7 +62,7 @@ public class EstatTauler {
         return false;
     }
     
-    public Pesa[][] getTauler() {
+    public ChessFigure[][] getTauler() {
         return tauler;
     }
     

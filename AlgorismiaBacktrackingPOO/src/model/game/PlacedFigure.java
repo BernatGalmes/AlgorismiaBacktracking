@@ -1,7 +1,6 @@
-package transfer.model;
+package model.game;
 
-import transfer.model.chesspieces.ChessFigure;
-import transfer.model.game.BoardPosition;
+import model.chesspieces.ChessFigure;
 
 /**
  *

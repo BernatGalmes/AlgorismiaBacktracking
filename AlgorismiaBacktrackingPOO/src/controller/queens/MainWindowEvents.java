@@ -1,11 +1,13 @@
 package controller.queens;
 
+import controller.saveboard.Problem;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import model.chesspieces.ChessFigure;
 import model.queens.BoardDefinition;
 import view.queens.MainWindow;
 
@@ -29,8 +31,11 @@ public class MainWindowEvents implements ActionListener, ChangeListener {
             String accio = e.getActionCommand();
             switch (accio) {
                 case "compute" -> {
-//                    view.reset();
-//                    view.colocaPeces(resultBoard);
+                    Problem s = new Problem(model.getPieces().toArray(new ChessFigure[0]), model.getBoardSize());
+                    ChessFigure[][] resultBoard = s.solve();
+                    
+                    view.reset();
+                    view.colocaPeces(resultBoard);
                 }
 
                 default -> throw new badSelection();

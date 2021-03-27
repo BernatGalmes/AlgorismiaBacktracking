@@ -1,6 +1,6 @@
 package controller.saveboard;
 
-import model.chesspieces.Pesa;
+import model.chesspieces.ChessFigure;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import model.saveboard.BoardDefinition;
+import transfer.SaveBoardInterface;
 import view.saveboard.MainWindow;
 
 /**
@@ -32,14 +33,29 @@ public class MainWindowEvents implements ActionListener, ChangeListener {
                 case "addPiece" -> {
                     try {
                         this.addPiece();
-                    } catch (Pesa.badSelection ex) {
+                    } catch (ChessFigure.badSelection ex) {
                         Logger.getLogger(MainWindowEvents.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
 
                 case "compute" -> {
-//                    view.reset();
-//                    view.colocaPeces(resultBoard);
+                    SaveBoardInterface s = new Problem(model.getPieces().toArray(new ChessFigure[0]), model.getBoardSize());
+                    int[] figuresCodes = new int[model.getPieces().size()];
+                    for(int i = 0; i < model.numPieces(); i ++) {
+                        figuresCodes[i] = model.getPiece(i).getCodi();
+                    }
+                    int[][] resultBoard = s.solve(figuresCodes, model.getBoardSize());
+                    ChessFigure[][] board = new ChessFigure[model.getBoardSize()][model.getBoardSize()];
+                    for(int i = 0; i < model.getBoardSize(); i ++) {
+                        for(int j = 0; j < model.getBoardSize(); j ++) {
+                            if (resultBoard[i][j] > 0) {
+                                board[i][j] = ChessFigure.getPesa(resultBoard[i][j]);
+                            }                            
+                        }
+                    }
+                    view.reset();
+                    view.colocaPeces(board);
+                    break;
                 }
 
                 case "resetPieces" -> {
@@ -49,13 +65,16 @@ public class MainWindowEvents implements ActionListener, ChangeListener {
                 default -> throw new badSelection();
             }
            
-        } catch (badSelection ex) {
+        } catch (ChessFigure.badSelection ex) {
+            Logger.getLogger(MainWindowEvents.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(MainWindowEvents.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
             Logger.getLogger(MainWindowEvents.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
-    private void addPiece() throws Pesa.badSelection {
-        Pesa p_sel = Pesa.getPesa(view.getCurrentPiezeSelected());
+    private void addPiece() throws ChessFigure.badSelection {
+        ChessFigure p_sel = ChessFigure.getPesa(view.getCurrentPiezeSelected());
         model.addPiece(p_sel);
         view.updateView();
     }

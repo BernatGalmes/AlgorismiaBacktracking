@@ -1,6 +1,6 @@
 package model.saveboard;
 
-import model.chesspieces.Pesa;
+import model.chesspieces.ChessFigure;
 import java.util.ArrayList;
 
 /**
@@ -11,14 +11,14 @@ public class BoardDefinition {
     public static final int INI_BOARD_SIZE = 8;
     public static final String[] T_PECES = {"bishop", "knight", "pawnn", "king", "queen", "rook"};
     
-    private final ArrayList<Pesa> pieces;
+    private final ArrayList<ChessFigure> pieces;
     private int boardSize = INI_BOARD_SIZE;
     
     public BoardDefinition() {
         pieces = new ArrayList<>();
     }
     
-    public void addPiece(Pesa p) {
+    public void addPiece(ChessFigure p) {
         getPieces().add(p);
     }
     
@@ -26,7 +26,7 @@ public class BoardDefinition {
         this.getPieces().clear();
     }
     
-    public Pesa getPiece(int i) {
+    public ChessFigure getPiece(int i) {
         return this.getPieces().get(i);
     }
     
@@ -51,7 +51,7 @@ public class BoardDefinition {
     /**
      * @return the pieces
      */
-    public ArrayList<Pesa> getPieces() {
+    public ArrayList<ChessFigure> getPieces() {
         return pieces;
     }
 

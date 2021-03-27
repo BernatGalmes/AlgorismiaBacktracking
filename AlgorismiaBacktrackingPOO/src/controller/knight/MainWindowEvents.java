@@ -7,6 +7,8 @@ import java.util.logging.Logger;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import model.knight.BoardDefinition;
+import view.comuns.CellDrawable;
+import view.knight.IntegerCellDrawable;
 import view.knight.MainWindow;
 
 /**
@@ -29,8 +31,16 @@ public class MainWindowEvents implements ActionListener, ChangeListener {
             String accio = e.getActionCommand();
             switch (accio) {
                 case "compute" -> {
-//                    view.reset();
-//                    view.colocaPeces(content);
+                    Solution s = new Solution(model.getInitialPosition(), model.getBoardSize());
+                    int[][] resultBoard = s.findSolution();
+                    CellDrawable[][] content = new CellDrawable[model.getBoardSize()][model.getBoardSize()];
+                    for (int i=0; i < model.getBoardSize(); i++){
+                        for (int j=0; j < model.getBoardSize(); j++){
+                            content[i][j] = new IntegerCellDrawable(resultBoard[i][j]);
+                        }                        
+                    }
+                    view.reset();
+                    view.colocaPeces(content);
                 }
 
                 default -> throw new badSelection();

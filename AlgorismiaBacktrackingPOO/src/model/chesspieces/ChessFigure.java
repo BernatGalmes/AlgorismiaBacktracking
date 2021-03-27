@@ -1,8 +1,8 @@
-package transfer.model.chesspieces;
+package model.chesspieces;
 
-import transfer.model.game.BoardPosition;
 import java.util.ArrayList;
 import java.util.List;
+import model.game.BoardPosition;
 import transfer.Config;
 import view.comuns.CellDrawable;
 
@@ -89,7 +89,7 @@ public abstract class ChessFigure implements CellDrawable {
         unari, infinit
     }
 
-    public static ChessFigure getPesa(int codi) throws Exception {
+    public static ChessFigure getPesa(int codi) throws badSelection {
         switch (codi) {
             case Config.FIGURES_KNIGHT_CODE:
                 return new Cavall();

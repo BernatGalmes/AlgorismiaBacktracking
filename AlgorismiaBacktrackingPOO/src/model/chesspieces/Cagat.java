@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package transfer.model.chesspieces;
+package model.chesspieces;
 
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -13,30 +13,29 @@ import transfer.Config;
  *
  * @author Bernardo
  */
-public class Peo extends ChessFigure {
-
-    public Peo() {
+public class Cagat extends ChessFigure {
+    
+    public Cagat() {
         this.t_mov = T_mov.infinit;
-        MovX = new int[]{0, 0};
-        MovY = new int[]{-1, +1};
-        this.codi = Config.FIGURES_PAWN_CODE;
+        this.MovX= new int[]{0, +1, -1};
+        this.MovY = new int[]{-1, -1, -1};
+        this.codi = Config.FIGURES_INVENTED_1_CODE;
     }
 
     @Override
     public Image FiguraFBlanc() {
         Toolkit t = Toolkit.getDefaultToolkit();
-        return t.getImage("resources/imatges/Fons_Blanc/Gat.gif");
+        return t.getImage("resources/imatges/Fons_Blanc/Cagat.gif");
     }
 
     @Override
     public Image FiguraFNegre() {
         Toolkit t = Toolkit.getDefaultToolkit();
-        return t.getImage("resources/imatges/Fons_Negre/Gat.gif");
+        return t.getImage("resources/imatges/Fons_Negre/Cagat.gif");
     }
 
     @Override
     public String toString() {
-        return "Gat";
+        return "Cagat";
     }
-
 }

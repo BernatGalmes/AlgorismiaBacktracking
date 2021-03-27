@@ -1,15 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package model.chesspieces;
 
 import java.awt.Image;
 import java.awt.Toolkit;
+import transfer.Config;
 
 /**
- * 
- * @author Bernat Galmés Rubert
+ *
+ * @author Bernardo
  */
-public class Peo extends Pesa {
+public class Peo extends ChessFigure {
 
     public Peo() {
+        this.t_mov = T_mov.infinit;
+        MovX = new int[]{0, 0};
+        MovY = new int[]{-1, +1};
+        this.codi = Config.FIGURES_PAWN_CODE;
     }
 
     @Override

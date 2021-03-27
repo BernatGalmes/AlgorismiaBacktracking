@@ -8,7 +8,7 @@ package controller.usuaris;
 import bootstrap.*;
 import java.util.ArrayList;
 import java.util.List;
-import model.chesspieces.Pesa;
+import model.chesspieces.ChessFigure;
 import model.game.EstatTauler;
 import model.usuaris.Partida;
 import model.usuaris.Arbitre;
@@ -51,7 +51,7 @@ public class Bootstrap {
             for (String piece : pieces) {
                 System.out.println(piece);
                 String[] posicio = piece.split("-");
-                tauler.colocarPesa(posicio[0], Pesa.getPesa(posicio[1], Integer.parseInt(posicio[2])));
+                tauler.colocarPesa(posicio[0], ChessFigure.getPesa(posicio[1], Integer.parseInt(posicio[2])));
             }
             j1.registrarPartida(partida);
             j2.registrarPartida(partida);

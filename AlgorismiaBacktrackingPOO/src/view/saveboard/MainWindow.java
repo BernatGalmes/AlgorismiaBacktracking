@@ -1,15 +1,14 @@
 package view.saveboard;
 
-import model.chesspieces.Pesa;
-import view.comuns.CellDrawable;
-import view.comuns.ChessBoardPanel;
 import java.awt.event.ActionListener;
 import javax.swing.event.ChangeListener;
 import model.saveboard.BoardDefinition;
+import view.comuns.CellDrawable;
+import view.comuns.ChessBoardPanel;
 
 /**
- * 
- * @author Bernat Galmés Rubert
+ *
+ * @author bernat
  */
 public class MainWindow extends javax.swing.JFrame {
 
@@ -176,7 +175,7 @@ public class MainWindow extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panel_options, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE))
+                    .addComponent(panel_options, javax.swing.GroupLayout.PREFERRED_SIZE, 259, Short.MAX_VALUE))
                 .addGap(16, 16, 16)
                 .addComponent(T, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))

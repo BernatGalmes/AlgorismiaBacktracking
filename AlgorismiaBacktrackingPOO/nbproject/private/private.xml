@@ -3,7 +3,34 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/modules/queens/controller/MainWindowEvents.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/saveboard/BoardStatus.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/saveboard/Bootstrap.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/saveboard/Problem.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/view/comuns/MainMenu.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Cavall.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/ChessFigure.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/usuaris/Bootstrap.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/knight/MainWindowEvents.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Cagat.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Peo.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/knight/BoardStatus.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Torre.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Rei.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/view/queens/MainWindow.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/knight/Solution.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/view/knight/MainWindow.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/view/knight/IntegerCellDrawable.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/queens/MainWindowEvents.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Reina.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/chesspieces/Alfil.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/knight/Bootstrap.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/usuaris/DataLoader.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/saveboard/BoardDefinition.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/bootstrap/bootstrap.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/controller/saveboard/MainWindowEvents.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/test/controller/saveboard/ProblemTest.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/model/game/BoardPosition.java</file>
+            <file>file:/D:/berna/Dropbox%20(Personal)/UIB/Algorismia20-21/Programació/AlgorismiaBacktracking/AlgorismiaBacktrackingPOO/src/transfer/model/PlacedFigure.java</file>
         </group>
     </open-files>
 </project-private>

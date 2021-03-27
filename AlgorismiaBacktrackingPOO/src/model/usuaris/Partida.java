@@ -5,7 +5,7 @@
  */
 package model.usuaris;
 
-import model.chesspieces.Pesa;
+import model.chesspieces.ChessFigure;
 import model.game.EstatTauler;
 import model.usuaris.Jugador;
 
@@ -42,7 +42,7 @@ public class Partida {
     }
     
     
-    public Pesa[][] getColocacioPecesEstat(){
+    public ChessFigure[][] getColocacioPecesEstat(){
         return this.estatActual.getTauler();
     }
 }
